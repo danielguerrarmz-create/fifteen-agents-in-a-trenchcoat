@@ -1,0 +1,12 @@
+{
+  "tools": [
+    "Read",
+    "Grep",
+    "Glob",
+    "Edit",
+    "Write",
+    "Bash"
+  ],
+  "mcps": [],
+  "allowedPaths": []
+}

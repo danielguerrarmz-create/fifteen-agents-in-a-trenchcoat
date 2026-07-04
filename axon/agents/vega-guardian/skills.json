@@ -1,0 +1,16 @@
+{
+  "skills": [
+    "testing-rulebook",
+    "secure-coding-rulebook",
+    "debugging-playbook",
+    "safety-guard",
+    "error-handling",
+    "eval-harness"
+  ],
+  "primary": [
+    "testing-rulebook",
+    "secure-coding-rulebook",
+    "debugging-playbook"
+  ],
+  "provisionedAll": false
+}

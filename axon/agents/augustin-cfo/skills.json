@@ -1,0 +1,13 @@
+{
+  "skills": [
+    "cost-tracking",
+    "context-budget",
+    "architecture-decision-records",
+    "find-skills"
+  ],
+  "primary": [
+    "cost-tracking",
+    "context-budget"
+  ],
+  "provisionedAll": false
+}

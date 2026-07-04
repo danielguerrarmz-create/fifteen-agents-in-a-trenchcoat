@@ -1,0 +1,19 @@
+{
+  "skills": [
+    "github-actions-docs",
+    "debugging-playbook",
+    "error-handling",
+    "safety-guard",
+    "backend-api-rulebook",
+    "git-github-rulebook",
+    "architecture-decision-records"
+  ],
+  "primary": [
+    "backend-api-rulebook",
+    "debugging-playbook",
+    "architecture-decision-records",
+    "github-actions-docs",
+    "error-handling"
+  ],
+  "provisionedAll": false
+}

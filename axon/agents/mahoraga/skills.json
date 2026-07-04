@@ -1,0 +1,20 @@
+{
+  "skills": [
+    "eval-harness",
+    "debugging-playbook",
+    "context-budget",
+    "safety-guard",
+    "architecture-decision-records",
+    "continuous-learning-v2",
+    "context-engineering-collection"
+  ],
+  "primary": [
+    "eval-harness",
+    "debugging-playbook",
+    "context-budget",
+    "safety-guard",
+    "architecture-decision-records",
+    "continuous-learning-v2"
+  ],
+  "provisionedAll": false
+}

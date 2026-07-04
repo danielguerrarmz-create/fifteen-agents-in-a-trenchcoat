@@ -1,0 +1,60 @@
+{
+  "_comment": "TEMPLATE — maps to ~/.claude/settings.json. Replace <HOME> with your absolute home path (Claude Code hook commands do not expand ~). Remove hooks you do not want. See ../axon/README.md for what each hook does.",
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"<HOME>/axon/hooks/fleet-context-injector.mjs\""
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"<HOME>/axon/hooks/cost-tracker.mjs\""
+          },
+          {
+            "type": "command",
+            "command": "node \"<HOME>/axon/hooks/auto-handoff/capture.mjs\""
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Task",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"<HOME>/axon/hooks/subagent-bridge.mjs\""
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"<HOME>/axon/hooks/subagent-bridge.mjs\""
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "discord@claude-plugins-official": false
+  },
+  "autoUpdatesChannel": "latest",
+  "theme": "auto",
+  "teammateMode": "in-process"
+}

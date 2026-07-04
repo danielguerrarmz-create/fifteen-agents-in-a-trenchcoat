@@ -1,0 +1,31 @@
+# Secrets / credentials — never commit
+*.credentials*
+**/credentials*
+.claude.json
+.claude.json.backup
+.env
+.env.*
+secrets.json
+**/*.secret
+**/.secrets*
+**/*.token
+
+# Fleet memory — accumulates whatever you feed it locally; not for sharing
+**/memory.jsonl
+**/log/
+
+# Build artifacts
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# OS cruft
+.DS_Store
+Thumbs.db

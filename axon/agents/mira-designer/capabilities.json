@@ -1,0 +1,13 @@
+{
+  "tools": [
+    "Read",
+    "Grep",
+    "Glob",
+    "WebSearch",
+    "WebFetch",
+    "Edit",
+    "Write"
+  ],
+  "mcps": [],
+  "allowedPaths": []
+}

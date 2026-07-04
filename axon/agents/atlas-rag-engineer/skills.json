@@ -1,0 +1,23 @@
+{
+  "skills": [
+    "backend-api-rulebook",
+    "secure-coding-rulebook",
+    "architecture-decision-records",
+    "codebase-onboarding",
+    "debugging-playbook",
+    "testing-rulebook",
+    "iterative-retrieval",
+    "eval-harness",
+    "context-engineering-collection",
+    "cost-tracking"
+  ],
+  "primary": [
+    "backend-api-rulebook",
+    "secure-coding-rulebook",
+    "architecture-decision-records",
+    "codebase-onboarding",
+    "debugging-playbook",
+    "testing-rulebook"
+  ],
+  "provisionedAll": false
+}

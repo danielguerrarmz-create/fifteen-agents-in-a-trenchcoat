@@ -1,0 +1,12 @@
+{
+  "skills": [
+    "frontend-design",
+    "web-design-guidelines",
+    "make-interfaces-feel-better",
+    "motion-foundations",
+    "motion-patterns",
+    "vercel-composition-patterns"
+  ],
+  "primary": [],
+  "provisionedAll": false
+}

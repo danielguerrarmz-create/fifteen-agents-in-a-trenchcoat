@@ -1,0 +1,24 @@
+{
+  "skills": [
+    "codebase-onboarding",
+    "debugging-playbook",
+    "testing-rulebook",
+    "backend-api-rulebook",
+    "error-handling",
+    "git-github-rulebook",
+    "architecture-decision-records",
+    "secure-coding-rulebook",
+    "team-orchestration",
+    "context-engineering-collection",
+    "frontend-design",
+    "safety-guard"
+  ],
+  "primary": [
+    "codebase-onboarding",
+    "debugging-playbook",
+    "testing-rulebook",
+    "backend-api-rulebook",
+    "error-handling"
+  ],
+  "provisionedAll": false
+}
