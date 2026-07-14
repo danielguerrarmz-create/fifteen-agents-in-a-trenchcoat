@@ -16,7 +16,7 @@ claude/                     → maps to ~/.claude/
 │                           policy + second-brain protocol. The heart of the setup.
 ├── settings.json           Hook wiring + agent-teams flag (TEMPLATE — replace <HOME>).
 ├── agents/                 The 15 fleet agent definitions (persona, role, model, memory).
-└── skills/                 ~40 skills (see NOTICE.md for third-party attributions).
+└── skills/                 ~50 skills (see NOTICE.md for third-party attributions).
 
 axon/                       → maps to ~/axon/ (the fleet's home; the app itself is NOT included)
 ├── agents/<id>/            Per-agent CHARTER.md + capabilities.json + skills.json +
@@ -65,6 +65,48 @@ roster + orchestration rules live in `claude/CLAUDE.md`.
 Each agent reads its `~/axon/agents/<id>/memory/memory.jsonl` at task start and appends
 durable learnings before finishing — that's how the fleet compounds. The scaffolds ship
 empty; memory builds up as you use them.
+
+## The learning loop
+
+The fleet revises itself, but it is **gated** — agents propose, a human approves, and only
+then does an agent change. Nothing here rewrites another agent autonomously.
+
+```
+  any agent finishes a task
+        │  invokes `fleet-instincts`
+        ▼
+  writes ONE instinct  ──►  secondbrain/99-Claude-Memory/instincts/
+  (trigger, confidence 0.3–0.9, domain, scope)
+        │
+        ▼
+  Mahoraga runs `fleet-evolve`
+        │  discards most · clusters the rest
+        ▼
+  proposals ──► ~/.claude/agents/_proposals/
+        │
+        ▼
+  ⏸  YOU approve or reject
+        │
+        ▼
+  the agent's charter / preloads change
+```
+
+Three design choices keep this from rotting into noise:
+
+- **Discarding is the job.** A cluster only becomes actionable at 2+ independent instincts,
+  or 1 at confidence `0.9` (meaning a human confirmed it directly). A lone `0.5` observation
+  is not a lesson. Most instincts should die in the sweep.
+- **Rejected instincts stay rejected** and never resurface in a later sweep. An instinct that
+  keeps coming back after rejection is precisely how a learning loop fails to converge.
+- **Mahoraga never applies.** His write access is fenced to three places: his own memory, the
+  proposals directory, and the `status:` field of instincts he has swept.
+
+> **Two gotchas that will silently break this** if you copy the fleet without them: a subagent
+> whose `tools:` allowlist omits `Skill` **cannot invoke any skill at all** (so none of the
+> above fires), and one that omits `Agent` cannot spawn sub-agents. Both fail silently, with no
+> warning at spawn time. Every agent here lists both. Separately, `skills:` preloads are
+> injected in full on **every spawn** of that agent — cheap for an agent you call constantly,
+> pure waste for one you call once a week. Mahoraga audits that budget each sweep.
 
 ## What was removed (and why)
 

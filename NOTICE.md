@@ -31,6 +31,18 @@ frontmatter (from the `vercel-labs` skills distribution).
 - **pinterest-pin-generation** — `metadata.author: eachlabs`; wraps "each::sense AI" for
   Pinterest pin image generation.
 
+## Remotion (official — `remotion-dev/skills`)
+
+- **remotion-best-practices**, **remotion-markup**, **remotion-captions**, **remotion-create**,
+  **remotion-render**, **remotion-interactivity**, **remotion-saas**, **mediabunny** — the
+  official Remotion team's Agent Skills package (`github.com/remotion-dev/skills`, published
+  as `@remotion/skills`). Installed via the Vercel Labs `skills` CLI
+  (`npx skills add remotion-dev/skills`). `remotion-best-practices` is a hub skill that lazily
+  links the other seven, so the always-loaded cost is one description rather than eight.
+  These replace an earlier single `remotion-video-creation` skill, which was a stale snapshot
+  of the same upstream source before it was restructured. **Remotion itself is source-available
+  under its own licence, not MIT — verify Remotion's licence terms before any commercial use.**
+
 ## Next Level Builder (MIT)
 
 - **ui-ux-pro-max-skill** — MIT License, `Copyright (c) 2024 Next Level Builder`. Vendored
@@ -94,6 +106,8 @@ personal setup:
 - content-strategy
 - debugging-playbook
 - find-skills
+- fleet-evolve *(authored for this setup — Mahoraga's self-revision pass)*
+- fleet-instincts *(authored for this setup — how agents record learnings)*
 - git-github-rulebook
 - github-actions-docs
 - roblox-game-development
