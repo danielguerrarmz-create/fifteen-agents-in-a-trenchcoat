@@ -1,6 +1,6 @@
 ---
 name: roblox-game-development
-description: Use this skill for any Roblox related tasks
+description: Roblox and Luau development - game scripts, RemoteEvents and client-server architecture, Rojo project sync, Studio tooling and the Roblox MCP bridge, UI, lighting, physics, monetization, and performance. Use for any Roblox place, experience, or Luau scripting task, including the Latino Backrooms project.
 ---
 
 # Roblox Game Development Skill

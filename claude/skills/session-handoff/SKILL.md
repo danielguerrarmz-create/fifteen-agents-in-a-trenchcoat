@@ -35,8 +35,8 @@ tracks the project, so work can resume with zero re-derivation.
 - If a surface doesn't exist for this project (no Notion page, no tracker), **skip it and note that in your report** — don't fabricate one.
 - Keep the handoff scannable: bullets over prose, link to detail files rather than inlining everything.
 
-## Example (a hypothetical "Operations OS" project)
+## Example (a studio operations system)
 - Handoff dir: `handoffs/` → `handoffs/2026-06-22-session-geo-and-content-os.md`
-- Tracker: `project-tracker.html` (insert a `change-entry` after `<!-- CHANGELOG_INJECT -->`)
-- Notion: append "Session log — <date>" to the relevant project page(s)
-- Commit the doc + tracker; push after the user's OK.
+- Tracker: `web-playbook.html` (insert a `change-entry` after `<!-- CHANGELOG_INJECT -->`)
+- Notion: append "Session log — <date>" to the **Operations OS** and **Content OS** pages
+- Commit the doc + tracker; push after the operator's OK.

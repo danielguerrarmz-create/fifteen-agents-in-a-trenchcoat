@@ -1,6 +1,6 @@
 ---
 name: remotion-create
-description: Creating a new Remotion video
+description: Scaffold a brand new Remotion project and its first composition - create-video, project folder structure, Root.tsx, and registering compositions. Use when no Remotion project exists yet or when setting up a fresh video repo from scratch. Not for editing an existing composition; load remotion-markup for that.
 metadata:
   tags: remotion
 ---

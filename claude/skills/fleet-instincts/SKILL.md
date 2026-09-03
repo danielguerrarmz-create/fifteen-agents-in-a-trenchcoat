@@ -32,7 +32,7 @@ One lesson per file. If you learned two things, write two files.
 
 ## How to write one
 
-Create `~/secondbrain/99-Claude-Memory/instincts/<slug>.md`:
+Create `~/SecondBrain/99-Claude-Memory/instincts/<slug>.md`:
 
 ```markdown
 ---

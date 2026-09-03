@@ -16,7 +16,7 @@ claude/                     → maps to ~/.claude/
 │                           policy + second-brain protocol. The heart of the setup.
 ├── settings.json           Hook wiring + agent-teams flag (TEMPLATE — replace <HOME>).
 ├── agents/                 The 15 fleet agent definitions (persona, role, model, memory).
-└── skills/                 ~50 skills (see NOTICE.md for third-party attributions).
+└── skills/                 94 skills (see NOTICE.md for third-party attributions).
 
 axon/                       → maps to ~/axon/ (the fleet's home; the app itself is NOT included)
 ├── agents/<id>/            Per-agent CHARTER.md + capabilities.json + skills.json +

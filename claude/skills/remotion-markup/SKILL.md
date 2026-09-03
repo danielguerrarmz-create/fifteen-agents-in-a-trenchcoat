@@ -1,6 +1,6 @@
 ---
 name: remotion-markup
-description: Best practices for writing Remotion React Markup
+description: Writing Remotion React components - useCurrentFrame, interpolate, spring, Sequence, AbsoluteFill, Series, transitions, and animation timing. Use when authoring or editing the JSX/TSX of a Remotion composition, animating elements on screen, or fixing timing and layout inside a video component.
 metadata:
   tags: remotion, react, markup
 ---

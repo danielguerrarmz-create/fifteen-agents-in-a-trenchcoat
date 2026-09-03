@@ -47,7 +47,9 @@ frontmatter (from the `vercel-labs` skills distribution).
 
 - **ui-ux-pro-max-skill** — MIT License, `Copyright (c) 2024 Next Level Builder`. Vendored
   from `github.com/nextlevelbuilder/ui-ux-pro-max-skill` ("UI UX Pro Max", https://uupm.cc).
-  Full `LICENSE` and `README.md` are bundled inside the skill folder.
+  Full `LICENSE` and `README.md` are bundled inside the skill folder. This folder is the
+  upstream repo as vendored, not a loadable skill (it has no root `SKILL.md`); it is kept
+  here so the MIT licence text and attribution travel with the redistributed copy.
 
 ## "Agent Skills for Context Engineering" (ECC)
 
@@ -72,6 +74,46 @@ carries `origin: ECC` in its `SKILL.md` frontmatter:
   as its own skill folder — see its `README.md` for the upstream repo and academic
   citations)
 
+A second batch was imported from the same channel on 2026-07-13; these also carry
+`origin: ECC`:
+
+- agent-introspection-debugging
+- agentic-os
+- brand-voice
+- browser-qa
+- content-engine
+- content-hash-cache-pattern
+- cost-aware-llm-pipeline
+- council
+- database-migrations
+- docker-patterns
+- e2e-testing
+- fal-ai-media
+- frontend-slides
+- investor-materials
+- investor-outreach
+- knowledge-ops
+- market-research
+- marketing-campaign
+- mcp-server-patterns
+- parallel-execution-optimizer
+- postgres-patterns
+- product-capability
+- product-lens
+- python-patterns
+- python-testing
+- react-testing
+- regex-vs-llm-structured-text
+- rules-distill
+- rust-patterns
+- security-scan
+- seo
+- skill-comply
+- skill-stocktake
+- ui-demo
+- verification-loop
+- windows-desktop-e2e
+
 ## Community (`origin: community`)
 
 Claude Code community-marketplace skills, some explicitly salvaged from stale/unmerged pull
@@ -85,11 +127,23 @@ requests against a community skills repo:
   found in `SKILL.md`.
 - **scientific-thinking-scholar-evaluation** — `origin: community`, no further attribution
   found in `SKILL.md`.
+- **data-scraper-agent** — `origin: community`, no further attribution found in `SKILL.md`.
+- **fastapi-patterns** — `origin: community`, no further attribution found in `SKILL.md`.
+- **gateguard** — `origin: community`, no further attribution found in `SKILL.md`.
+- **production-audit** — `origin: community`, no further attribution found in `SKILL.md`.
+
+## Other named origins
+
+- **agent-architecture-audit** — `origin: oh-my-agent-check` in frontmatter; no repo URL,
+  licence, or author field bundled. **Source unverified — check before redistribution.**
+- **santa-method** — `origin: "Ronald Skelton - Founder, RapportScore.ai"` in frontmatter;
+  no repo URL or licence bundled. **Source unverified — check before redistribution.**
 
 ## Author noted, source repo not specified — verify before redistribution
 
 - **motion-foundations** — `author: jeff` in frontmatter; no repo/license/URL given.
 - **motion-patterns** — `author: jeff` in frontmatter; no repo/license/URL given.
+- **motion-advanced** — `author: jeff` in frontmatter; no repo/license/URL given.
 - **ui-ux-pro-max** (note: distinct folder from `ui-ux-pro-max-skill` above) — covers
   similar ground (UI/UX design intelligence: styles, palettes, font pairings) but has no
   `LICENSE`/`README`/author field bundled in this folder. Possibly an earlier or partial

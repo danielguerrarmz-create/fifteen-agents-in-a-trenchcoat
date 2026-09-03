@@ -1,6 +1,6 @@
 ---
 name: mediabunny
-description: Multimedia handling with the Mediabunny library
+description: Mediabunny browser multimedia library - reading audio and video in the browser, probing duration and metadata, decoding, transcoding, and extracting audio without ffmpeg. Use when handling media files client-side, getting an audio or video duration, or preparing media for a Remotion or web video pipeline.
 metadata:
   tags: remotion, mediabunny, multimedia, video, audio
 ---

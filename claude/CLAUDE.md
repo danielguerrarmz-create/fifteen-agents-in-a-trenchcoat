@@ -48,11 +48,54 @@ Activate a skill with the Skill tool (e.g. `/tldr`) or by following its guidance
 | **motion-foundations** | Motion tokens, springs, perf/a11y/SSR rules for React/Next (`motion/react`) — base layer for animation work |
 | **motion-patterns** | Ready-made React/Next animation patterns — modal, toast, stagger, page/exit transitions |
 | **manim-video** | Clean animated technical explainers via Manim (concepts, graphs, system diagrams) |
-| **remotion-video-creation** | Programmatic video in React (Remotion) — 29 domain rules for a video pipeline |
+| **remotion-best-practices** | Programmatic video in React (Remotion) — hub skill that lazily loads the markup/captions/create/render/interactivity/saas rules |
 | **video-editing** | End-to-end video editing — FFmpeg, Remotion, ElevenLabs, fal.ai, Descript/CapCut polish |
 | **content-strategy** | Editorial positioning, content pillars, calendars, topical authority, content governance |
 | **scientific-thinking-literature-review** | Systematic literature review — search planning, source screening, synthesis, citation checks |
 | **scientific-thinking-scholar-evaluation** | Evaluating papers/proposals/methods sections, evidence quality, research-writing feedback |
+| **agentic-os** | Building a persistent multi-agent OS on Claude Code — kernel, specialists, file memory, scheduling |
+| **agent-architecture-audit** | Diagnosing a misbehaving agent/LLM app — memory pollution, tool-discipline failure, wrapper regression (Lain/Mahoraga) |
+| **agent-introspection-debugging** | An agent run failed and you need capture → diagnosis → contained recovery, not a guess |
+| **council** | Ambiguous decision with several valid paths — structured disagreement, go/no-go (the MAGI council pattern) |
+| **santa-method** | Two independent reviewers must both pass before output ships — adversarial convergence for accuracy gates |
+| **verification-loop** | Systematically verifying a session's work actually holds before calling it done |
+| **parallel-execution-optimizer** | Making a task much faster via concurrent agents, batched tool calls, isolated worktrees |
+| **gateguard** | Forcing concrete investigation (importers, schemas, instructions) *before* Edit/Write/Bash — anti-hallucination gate |
+| **skill-stocktake** | Auditing your own skills/commands for quality (quick scan or full stocktake) |
+| **skill-comply** | Testing whether skills/rules/agents are *actually followed* — generates scenarios at 3 strictness levels |
+| **rules-distill** | Extracting cross-cutting principles out of skills and distilling them into rule files |
+| **mcp-server-patterns** | Writing an MCP server (tools/resources/prompts, Zod, stdio vs HTTP) |
+| **cost-aware-llm-pipeline** | LLM cost control — model routing by complexity, budget tracking, prompt caching |
+| **regex-vs-llm-structured-text** | Deciding regex vs LLM for parsing structured text — start regex, escalate only on low-confidence edges |
+| **content-hash-cache-pattern** | Caching expensive file processing by SHA-256 content hash — path-independent, auto-invalidating |
+| **knowledge-ops** | Knowledge-base ingestion/sync/retrieval across files, MCP memory, vector stores, Git |
+| **product-lens** | Validating the *why* before building — product diagnostics, pressure-testing direction (Lelouch) |
+| **product-capability** | Turning a PRD/roadmap ask into an implementation-ready capability plan with constraints + invariants (Lelouch) |
+| **market-research** | Competitive analysis, industry intel, due diligence with source attribution (Izaya) |
+| **investor-materials** | Pitch decks, one-pagers, memos, accelerator applications, financial models (Reigen) |
+| **investor-outreach** | Cold emails, warm intros, follow-ups, investor updates (Reigen) |
+| **marketing-campaign** | End-to-end campaign — audience, positioning, angle, landing copy, email sequence (Erwin) |
+| **brand-voice** | Deriving a writing-style profile from real source posts/copy, then reusing it |
+| **content-engine** | Platform-native content systems for X/LinkedIn/TikTok/YouTube/newsletter + repurposing (Shikamaru) |
+| **seo** | Technical SEO, on-page, structured data, Core Web Vitals audits (Shikamaru) |
+| **fastapi-patterns** | FastAPI work — async, DI, Pydantic models, OpenAPI, prod readiness |
+| **python-patterns** | Pythonic idioms, PEP 8, type hints — the language layer under the backend rulebook |
+| **python-testing** | pytest specifics — fixtures, mocking, parametrization, coverage (stack layer under `testing-rulebook`) |
+| **postgres-patterns** | Postgres schema/index/query optimization and security (incl. pgvector) |
+| **database-migrations** | Schema/data migrations, rollbacks, zero-downtime deploys |
+| **react-testing** | React Testing Library + Vitest/Jest, MSW mocking, axe assertions |
+| **e2e-testing** | Playwright E2E — Page Object Model, CI integration, flaky-test strategy |
+| **windows-desktop-e2e** | E2E for native Windows desktop apps via pywinauto/UI Automation (e.g. a Tauri shell) |
+| **docker-patterns** | Docker/Compose for local dev, container security, multi-service orchestration |
+| **rust-patterns** | Idiomatic Rust — ownership, errors, traits, concurrency (Tauri backend) |
+| **production-audit** | Local-evidence production-readiness audit — "what breaks in prod?" before launch |
+| **browser-qa** | Verifying UI/visual behavior in a real browser after deploying |
+| **security-scan** | Scanning your own `.claude/` config for injection risks and misconfigurations — matters if you publish it |
+| **data-scraper-agent** | Building a scheduled AI scraper for a public source — job boards, prices, news |
+| **fal-ai-media** | Generating image/video/audio via fal.ai — Nano Banana, Seedance, Kling, Veo 3 |
+| **motion-advanced** | Drag/gestures, text animation, SVG path drawing, imperative sequences (tier 3 above motion-patterns) |
+| **ui-demo** | Recording a polished UI demo/walkthrough video with Playwright |
+| **frontend-slides** | Animation-rich HTML presentations from scratch or from a PPTX (investor/accelerator decks) |
 
 ## Built-in commands also available
 `/code-review` (bug + cleanup review of the diff), `/security-review` (security review of a

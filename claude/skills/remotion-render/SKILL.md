@@ -1,6 +1,6 @@
 ---
 name: remotion-render
-description: Best practices for rendering videos
+description: Render Remotion compositions to video files - the render CLI, still frames, concurrency, codecs, quality and output settings, and Lambda versus local rendering. Use when exporting or encoding a final MP4 or WebM, or when a render is slow, failing, out of memory, or producing wrong output.
 metadata:
   tags: remotion, render
 ---

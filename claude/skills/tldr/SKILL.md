@@ -25,7 +25,7 @@ Produce a short, jargon-light summary of the file the user names.
 
 <!--
 This skill is also a TEMPLATE. To make your own global skill:
-  1. Create ~/.claude/skills/<your-skill-name>/SKILL.md
+  1. Create ~/.claude/skills/<your-skill-name>\SKILL.md
   2. Set `name` + a strong `description` (the description is how Claude decides when to auto-use it).
   3. Optional frontmatter: allowed-tools, argument-hint, disable-model-invocation,
      user-invocable, model, effort, context: fork, agent, paths, hooks.

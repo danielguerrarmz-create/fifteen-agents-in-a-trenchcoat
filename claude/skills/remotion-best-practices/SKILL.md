@@ -1,6 +1,6 @@
 ---
 name: remotion-best-practices
-description: Best practices for Remotion
+description: Core Remotion conventions and the entry point for Remotion video work - composition structure, fps and duration handling, asset loading, and which specialized Remotion skill to load next. Use when starting or reviewing a Remotion project, or when unsure which Remotion skill applies. Load remotion-create for a brand new project, remotion-markup for component code, remotion-render for exporting.
 metadata:
   tags: remotion, video, react, animation, composition
 ---

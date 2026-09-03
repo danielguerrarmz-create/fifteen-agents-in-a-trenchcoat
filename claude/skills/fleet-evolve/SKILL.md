@@ -11,9 +11,9 @@ directly in this skill. Write a proposal and stop.
 
 ## Inputs
 
-- `~/secondbrain/99-Claude-Memory/instincts/*.md` — what the fleet learned.
+- `~/SecondBrain/99-Claude-Memory/instincts/*.md` — what the fleet learned.
 - `~/.claude/agents/*.md` — the current fleet.
-- `~/.claude\skills\` — what's already installed (never propose a duplicate).
+- `~/.claude/skills/` — what's already installed (never propose a duplicate).
 
 ## Phase 1 — Sweep
 
@@ -46,12 +46,12 @@ For each actionable cluster, decide the **smallest intervention** that fixes it:
 | An agent reaches for the wrong approach | A charter body amendment (one line, imperative) |
 | A recurring workflow has no home | A new skill (only if no existing skill covers it) |
 | An agent lacks a tool it keeps needing | A `tools:` addition — flag as permission-widening |
-| the operator corrects the same thing repeatedly | A memory note, not an agent edit |
+| The operator corrects the same thing repeatedly | A memory note, not an agent edit |
 
 Prefer charter lines over new skills; prefer new skills over new agents. Never
 propose a new fleet member — the roster is the operator's call.
 
-Write each proposal to `~/.claude\agents\_proposals/YYYY-MM-DD-<agent>.md`:
+Write each proposal to `~/.claude/agents/_proposals/YYYY-MM-DD-<agent>.md`:
 
 ```markdown
 ---
@@ -84,7 +84,7 @@ When the operator approves specific proposals by name:
 2. Apply only the approved diffs, exactly as written in the proposal.
 3. Mark the driving instincts `status: applied` and add `applied: <date>`.
 4. Move the proposal to `_proposals/applied/`.
-5. Commit the secondbrain vault.
+5. Commit the SecondBrain vault.
 6. Remind the operator that **agent changes only load at Claude Code startup** — a
    session restart is required before any of it takes effect.
 

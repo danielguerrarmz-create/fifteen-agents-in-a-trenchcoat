@@ -1,6 +1,6 @@
 ---
 name: remotion-captions
-description: Dealing with captions in Remotion
+description: Subtitles and captions in Remotion - the @remotion/captions Caption type, JSON caption files, Whisper transcription output, caption chunking, timing, and on-screen caption components. Use when adding, styling, timing, chunking, or fixing subtitles and captions in a Remotion video.
 metadata:
   tags: subtitles, captions, remotion, json
 ---

@@ -1,6 +1,6 @@
 ---
 name: remotion-saas
-description: Building video apps with Remotion - framework, rendering and Player advice
+description: Building applications around Remotion - @remotion/player embedding, server-side and Lambda render pipelines, render queues, templates, and video-editor or form-to-render product architecture. Use when Remotion is a feature inside a web app rather than a standalone video project.
 metadata:
   tags: remotion, saas, player, rendering, templates, lambda
 ---
